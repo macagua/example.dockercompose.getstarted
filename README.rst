@@ -98,7 +98,8 @@ For display the running processes into your Docker project, executing the follow
 Rebuild image project
 =====================
 
-For rebuild your Docker image project, executing the follow command:
+You need rebuild your Docker image project when was changed, for that
+executing the follow command:
 
 ::
 
@@ -109,10 +110,54 @@ name of the project as ``composetest``, also you indicate with the
 parameter ``--build`` that to build images before starting containers.
 
 
+Inspect service running
+=======================
+
+For see what environment variables are available to the ``web`` service,
+executing the follow command:
+
+::
+
+  $ docker-compose -p composetest run web env
+  PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+  HOSTNAME=813f4a22d6c5
+  TERM=xterm
+  FLASK_ENV=development
+  LANG=C.UTF-8
+  GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
+  PYTHON_VERSION=3.7.7
+  PYTHON_PIP_VERSION=20.1
+  PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/1fe530e9e3d800be94e04f6428460fc4fb94f5a9/get-pip.py
+  PYTHON_GET_PIP_SHA256=ce486cddac44e99496a702aa5c06c5028414ef48fdfd5242cd2fe559b13d4348
+  FLASK_APP=app.py
+  FLASK_RUN_HOST=0.0.0.0
+  HOME=/root
+
+
 Stopping project
 ================
 
-For stopping your Docker containers project, executing the follow command:
+For stopping your Docker containers project, executing the follow
+command:
+
+::
+
+  $ docker-compose -p composetest stop
+
+In this previous command you indicate with the parameter ``-p`` the
+name of the project as ``composetest``.
+
+With the ``stop`` option, let you to stop your running Docker
+containers without removing them. They can be started again with
+the command ``docker-compose -p composetest start``.
+
+
+Downing containers
+==================
+
+For bring everything down, removing the containers entirely, with the ``down``
+command. If you started your Docker Compose with ``docker-compose -p composetest up -d``
+command, stop your services once you've finished with them:
 
 ::
 
@@ -122,7 +167,14 @@ In this previous command you indicate with the parameter ``-p`` the
 name of the project as ``composetest``.
 
 With the ``down`` option, let you to stops containers and removes containers,
-networks, volumes, and images created by the `up` command option.
+networks, volumes, and images created by the ``up`` command option.
+
+Pass the parameter ``--volumes`` to also remove the data volume used by the
+container, executing the follow command:
+
+::
+
+  $ docker-compose -p composetest down --volumes
 
 .. _`Get started with Docker Compose`: https://docs.docker.com/compose/gettingstarted/
 .. _`Flask`: http://flask.pocoo.org/
