@@ -29,6 +29,9 @@ With the ``up`` option, let you to builds, (re)creates, starts, and attaches
 to containers for a service. also you indicate with the parameter ``-d``
 that the start of the containers is in the background.
 
+If all are ok, you can enter http://localhost:5000/ in a browser to see 
+the application running.
+
 
 Listing images
 ==============
