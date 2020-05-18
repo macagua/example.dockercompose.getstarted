@@ -107,6 +107,6 @@ With the ``down`` option, let you to stops containers and removes containers,
 networks, volumes, and images created by the `up` command option.
 
 .. _`Get started with Docker Compose`: https://docs.docker.com/compose/gettingstarted/
-.. _`Flask`: https://docs.docker.com/compose/gettingstarted/
+.. _`Flask`: http://flask.pocoo.org/
 .. _`Redis`: https://redis.io/
 
