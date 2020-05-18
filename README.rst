@@ -33,6 +33,21 @@ If all are ok, you can enter http://localhost:5000/ in a browser to see
 the application running.
 
 
+.. image:: https://raw.githubusercontent.com/macagua/example.dockercompose.getstarted/master/docs/_static/screenshot_1.png
+   :height: 160px
+   :width: 486px
+   :alt: The Web container running
+   :align: left
+
+
+If you refresh your browser the Web container return a new message, like this follow:
+
+.. image:: https://raw.githubusercontent.com/macagua/example.dockercompose.getstarted/master/docs/_static/screenshot_2.png
+   :height: 159px
+   :width: 486px
+   :alt: The Web container refreshed
+   :align: left
+
 Listing images
 ==============
 
