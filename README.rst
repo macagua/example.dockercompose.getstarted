@@ -176,6 +176,19 @@ container, executing the follow command:
 
   $ docker-compose -p composetest down --volumes
 
+
+Contribute
+==========
+
+- `Source code @ GitHub <https://github.com/macagua/example.dockercompose.getstarted.git>`_.
+- `Issues @ GitHub <https://github.com/macagua/example.dockercompose.getstarted/issues>`_.
+
+
+License
+=======
+
+The project is licensed under the MIT.
+
 .. _`Get started with Docker Compose`: https://docs.docker.com/compose/gettingstarted/
 .. _`Flask`: http://flask.pocoo.org/
 .. _`Redis`: https://redis.io/
