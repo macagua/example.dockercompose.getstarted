@@ -4,6 +4,15 @@ example.dockercompose.getstarted
 
 Example from the `Get started with Docker Compose`_ Tutorial.
 
+
+Features
+========
+
+- `Flask`_ web application based.
+
+- `Redis`_ key-value store based.
+
+
 Starting project
 ================
 
@@ -98,4 +107,6 @@ With the ``down`` option, let you to stops containers and removes containers,
 networks, volumes, and images created by the `up` command option.
 
 .. _`Get started with Docker Compose`: https://docs.docker.com/compose/gettingstarted/
+.. _`Flask`: https://docs.docker.com/compose/gettingstarted/
+.. _`Redis`: https://redis.io/
 
